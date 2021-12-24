@@ -2,7 +2,6 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Footer from "./footer";
 import Header from "./header";
-import Navbar from "./navbar";
 
 const Layout = ({
   children,
@@ -15,7 +14,7 @@ const Layout = ({
         <title>{title}</title>
       </Helmet>
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 w-full">
         {children}
       </main>
       <Footer />

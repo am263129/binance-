@@ -1,6 +1,7 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const {showSidebar} = props
   return (
     <div className="px-4 h-16 flex justify-between w-full">
       <a href='https://www.binance.com/en' className="mx-2 flex items-center text-app-yellow h-full fill-current">
@@ -10,7 +11,7 @@ const Navbar = () => {
             p-id="2935"></path>
         </svg>
       </a>
-      <div className="css-1pni31c flex md:hidden" id="menu-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+      <div className="w-8 h-8 my-auto flex md:hidden cursor-pointer" id="menu-btn" onClick={showSidebar}><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
         className="css-mykl4n hover:text-app-yellow">
         <path d="M22 4H2v2h20V4z" fill="currentColor"></path>
         <path d="M22 11H2v2h20v-2z" fill="currentColor"></path>

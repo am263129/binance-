@@ -111,6 +111,7 @@ module.exports = {
       80: "20rem",
       90: "25rem",
       100: "48rem",
+      115 : "75rem",
       120: "64rem",
       full: "100%",
       min: "min-content",
